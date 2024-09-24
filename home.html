@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assigment 5</title>
+    <!-- daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b9567b1604.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    
+
+    <header class="bg-[#F9F7F3] pb-10 pt-6 sticky top-0 z-20">
+        <!-- nav -->
+        <nav class="flex justify-between items-center max-w-[85%] mx-auto">
+            <!-- button -->
+            <button class="btn bg-[#B4F461] font-semibold  px-2 md:px-8 text-sm  md:text-xl"> <a href="index.html"> Home
+                </a></button>
+
+            <!-- middle -->
+            <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+                <img src="assets/logo.png" alt="">
+                <h3 class="font-semibold text-sm md:text-xl"> Donate Bangladesh</h3>
+            </div>
+
+            <!-- rigt -->
+            <div class="flex flex-col md:flex-row gap-3 items-center">
+                <img src="assets/coin.png" alt="">
+                <p class="font-semibold text-xl opacity-75"> 6000 BDT </p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-20 max-w-[80%] mx-auto justify-center">
+        <h1 class="font-bold text-6xl mb-10"> Important FAQ </h1>
+
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-2xl font-medium">What is the DOM, and how is it structured?</div>
+            <div class="collapse-content text-xl">
+                <p>The DOM (Document Object Model) is a hierarchical structure that represents the HTML or XML document
+                    as a tree of nodes. Each node corresponds to an element, attribute, or text in the document. The
+                    root of the tree is the document itself (document object), and from there, elements like <html>,
+
+                    <body>, and others form branches. This structure allows scripts to access, manipulate, and update
+                        the content and structure dynamically.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-2xl font-medium">How do you select elements in the DOM?</div>
+            <div class="collapse-content text-xl">
+                <p>You can select elements in the DOM using various methods. document.getElementById('id') selects an
+                    element by its ID, document.getElementsByClassName('class') selects elements by class name, and
+                    document.getElementsByTagName('tag') selects elements by tag name. Additionally,
+                    document.querySelector('selector') selects the first element that matches a CSS selector, while
+                    document.querySelectorAll('selector') selects all matching elements.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-2xl font-medium">What is the purpose of innerHTML, and how does it differ
+                from textContent?</div>
+            <div class="collapse-content text-xl">
+                <p>innerHTML is used to get or set the HTML content of an element, allowing for dynamic changes to an
+                    element's inner structure, including HTML tags. On the other hand, textContent retrieves or sets
+                    only the text inside an element, ignoring any HTML tags. textContent is generally safer when you're
+                    only working with text to avoid security issues like Cross-Site Scripting (XSS).</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-2xl font-medium">How does event delegation work in the DOM, and why is it
+                useful?</div>
+            <div class="collapse-content text-xl">
+                <p>Event delegation involves attaching a single event listener to a parent element, which handles events
+                    from its child elements. Instead of adding separate event listeners to each child, the parent uses
+                    event bubbling (where events propagate up the DOM tree) to manage events efficiently. This is
+                    particularly useful for dynamically added elements, as it reduces memory usage and the need for
+                    re-adding event listeners when the DOM changes.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-2xl font-medium">How can you dynamically add and remove elements from the
+                DOM?</div>
+            <div class="collapse-content text-xl">
+                <p>You can create elements using document.createElement('tagName') and then append them to the DOM using
+                    methods like appendChild() or insertBefore(). To remove elements, you can use element.remove() to
+                    directly remove an element from the DOM, or parentElement.removeChild(element) to remove it from its
+                    parent. These methods allow you to dynamically change the structure of the web page based on user
+                    interactions or other conditions.</p>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
