@@ -92,8 +92,12 @@
                                 efforts and making a positive impact on the lives of those in need.</p>
                             <input type="text" placeholder="Write Donation Ammout"
                                id="donate-noakhali-input" class="mb-6 input input-bordered w-full " />
-                            <button id="donate-noakhali-btn" class="btn bg-[#B4F461] font-semibold w-[100%] text-xl"> Donate Now
-                            </button>
+                            
+                            <div >
+                                <button id="donate-noakhali-btn" class="btn bg-[#B4F461] font-semibold w-[100%] text-xl"> Donate Now
+                                </button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,7 +177,34 @@
                     </div>
                 </div>
             </section>
+
+            <section id="confir-container" class="hidden">
+                <div  class="absolute top-[40%] left-[40%]">
+                    <div class="card bg-base-100  mx-auto shadow-3xl border">
+                        <div class="card-body items-center text-center mt-3">
+                            <h2 class="font-extrabold text-3xl " > Congrates!</h2>
+                        </div>
+                        <figure class="px-10 ">
+                          <img
+                            src="assets/coin.png"
+                            alt="Shoes"
+                            class="rounded-2xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                        
+                          <p>You have donated for humankind</p>
+                          <h4 class="font-extrabold text-xl mb-4"> Successfully </h4>
+                          <div class="card-actions">
+                            <button id="confir-btn" class="btn btn-primary">Close Confirmation</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
         </section>
+
+
+        
 
 
         <!-- history -->
@@ -183,6 +214,9 @@
 
 
     </main>
+
+
+    
 
 
     <script src="scripts/events.js"></script>
