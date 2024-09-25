@@ -18,28 +18,11 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
             document.getElementById('donate-noakhali-input').value = "";
             return;
         } else {
-            const confirContainer = document.getElementById('confir-container');
-            confirContainer.classList.remove('hidden');
-
-            const confirBtn = document.getElementById('confir-btn');
-            const confirmationHandler = function (e) {
-                e.preventDefault();
-                document.getElementById('donate-noakhali-input').value = "";
-                confirContainer.classList.add('hidden');
-            };
-
             document.getElementById('money-total').innerText = (totalMon - addMoney) + " BDT";
             document.getElementById('money-noakhali').innerText = (noaMon + addMoney) + " BDT";
             document.getElementById('donate-noakhali-input').value = "";
 
-            if (!confirBtn.hasEventListener) {
-                confirBtn.addEventListener('click', confirmationHandler);
-                confirBtn.hasEventListener = true; 
-            }
-
-
-            const div = document.createElement('div');
-            
+            modelShow();       
         }
     }
 });
@@ -64,25 +47,12 @@ document.getElementById('donate-feni-btn').addEventListener('click', function (e
             alert('Failed to Add money');
             document.getElementById('donate-feni-input').value = "";
             return;
-        } else {
-            const confirContainer = document.getElementById('confir-container');
-            confirContainer.classList.remove('hidden');
-
-            const confirBtn = document.getElementById('confir-btn');
-            const confirmationHandler = function (e) {
-                e.preventDefault();
-                
-                confirContainer.classList.add('hidden');
-            };
-
+        } else {        
             document.getElementById('money-total').innerText = (totalMon - addMoney) + " BDT";
             document.getElementById('money-feni').innerText = (noaMon + addMoney) + " BDT";
             document.getElementById('donate-feni-input').value = "";
             
-            if (!confirBtn.hasEventListener) {
-                confirBtn.addEventListener('click', confirmationHandler);
-                confirBtn.hasEventListener = true; 
-            }
+            modelShow();
         }
     }
 });
@@ -106,24 +76,11 @@ document.getElementById('donate-qoata-btn').addEventListener('click', function (
             document.getElementById('donate-quata-input').value = "";
             return;
         } else {
-            const confirContainer = document.getElementById('confir-container');
-            confirContainer.classList.remove('hidden');
-
-            const confirBtn = document.getElementById('confir-btn');
-            const confirmationHandler = function (e) {
-                e.preventDefault();
-                
-                confirContainer.classList.add('hidden');
-            };
-
             document.getElementById('money-total').innerText = (totalMon - addMoney) + " BDT";
             document.getElementById('money-quata').innerText = (noaMon + addMoney) + " BDT";
             document.getElementById('donate-quata-input').value = "";
 
-            if (!confirBtn.hasEventListener) {
-                confirBtn.addEventListener('click', confirmationHandler);
-                confirBtn.hasEventListener = true; 
-            }
+            modelShow();
         }
     }
 });

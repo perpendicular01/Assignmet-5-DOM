@@ -178,30 +178,22 @@
                 </div>
             </section>
 
-            <section id="confir-container" class="hidden">
-                <div  class="absolute top-[40%] left-[40%]">
-                    <div class="card bg-base-100  mx-auto shadow-3xl border">
-                        <div class="card-body items-center text-center mt-3">
-                            <h2 class="font-extrabold text-3xl " > Congrates!</h2>
-                        </div>
-                        <figure class="px-10 ">
-                          <img
-                            src="assets/coin.png"
-                            alt="Shoes"
-                            class="rounded-2xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                        
-                          <p>You have donated for humankind</p>
-                          <h4 class="font-extrabold text-xl mb-4"> Successfully </h4>
-                          <div class="card-actions">
-                            <button id="confir-btn" class="btn btn-primary">Close Confirmation</button>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </section>
+            
         </section>
+
+        <dialog id="confir-container" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box flex flex-col gap-2 w-[350px]">
+                <h3 class="text-3xl font-bold text-center"> Congrates! </h3>
+                <img class="mx-auto mb-2" src="assets/coin.png" alt="">
+                <p class="text-center font-light text-base md:text-lg">You have Donated for humankind</p>
+                <p class="text-center font-bold text-lg md:text-xl"> Successfully </p>
+                <div class="modal-action justify-center">
+                    <form method="dialog">
+                        <button id="confir-btn" class="btn"> Close confirmation </button>
+                    </form>
+                </div>
+            </div>
+          </dialog>
 
 
         

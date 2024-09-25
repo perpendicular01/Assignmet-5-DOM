@@ -9,3 +9,8 @@ function getTextById(id){
     return addMoney;
 
 }
+
+function modelShow(){
+    const confirModel = document.getElementById('confir-container');
+    confirModel.showModal();
+}
