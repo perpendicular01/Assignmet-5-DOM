@@ -1,5 +1,5 @@
 
-
+// noakhali
 document.getElementById('donate-noakhali-btn').addEventListener('click', function (event) {
     event.preventDefault();
 
@@ -34,7 +34,7 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
     }
 });
 
-
+//feni
 document.getElementById('donate-feni-btn').addEventListener('click', function (event) {
     event.preventDefault();
 
@@ -69,7 +69,7 @@ document.getElementById('donate-feni-btn').addEventListener('click', function (e
     }
 });
 
-
+//quota
 document.getElementById('donate-qoata-btn').addEventListener('click', function (event) {
     event.preventDefault();
 
